@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(226, 43%, 10%);
+  padding: 100px 50px;
+}
+
+/*Cards section*/
+#cards {
+  display: grid;
+  width: 900px;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 210px 210px;
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+}
+
+.card {
+  background-color: hsl(235, 46%, 20%);
+  color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  margin: 10px;
+}
+
+/*Profile*/
+.profileCard {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.highlightProfile {
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 1rem;
+  padding: 1.8rem 1.5rem 3rem;
+}
+
+#profileImage {
+  width: 60px;
+  border: 3px solid white;
+  border-radius: 3rem;
+}
+
+#reportText {
+  font-size: 11px;
+  margin: 1.5rem 0 0;
+  color: rgb(241, 241, 241);
+}
+
+#userName {
+  margin: 0.5rem 0;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.timeList {
+  list-style: none;
+  padding: 0.5rem 2rem;
+  font-size: 16px;
+}
+
+.timeList li {
+  color: rgba(255, 255, 255, 0.411);
+  cursor: pointer;
+  margin: 12px 0;
+}
+
+.timeList li:hover {
+  color: white;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+/*Other cards*/
+#socialCard {
+  background-color: hsl(264, 64%, 52%);
+  position: relative;
+}
+
+#workCard {
+  background-color: hsl(15, 100%, 70%);
+  position: relative;
+}
+
+#playCard {
+  background-color: hsl(195, 74%, 62%);
+  position: relative;
+}
+
+#selfCareCard {
+  background-color: hsl(43, 84%, 65%);
+  position: relative;
+}
+
+#excersiceCard {
+  background-color: hsl(145, 58%, 55%);
+  position: relative;
+}
+
+#studyCard {
+  background-color: hsl(348, 100%, 68%);
+  position: relative;
+}
+
+.content {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 155px;
+}
+
+.content h4 {
+  margin: 1.5rem;
+  font-size: 15px;
+}
+
+.content h1 {
+  margin: 1.5rem 1.5rem 0;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.content h5 {
+  margin: 0.2rem 1.5rem;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.content:hover {
+  background-color: hsl(235, 36%, 36%);
+}
+
+/*Cards headers*/
+.cardHeader {
+  display: flex;
+  justify-content: end;
+  overflow: hidden;
+  padding: 0 15px;
+}
+
+.cardHeader img {
+  width: 60px;
+  transform: translateY(-7px);
+}
+
+#excersiceCard .cardHeader img {
+  width: 60px;
+  transform: translateY(0px);
+}
+
+#selfCareCard .cardHeader img {
+  width: 50px;
+  transform: translateY(-7px);
+}
+
+/*Cards title*/
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title img {
+  width: 18px;
+  height: fit-content;
+}
+
+.title img:hover {
+  filter: invert(1) hue-rotate(180deg) brightness(200) contrast(100);
+}
+
+/*media-query*/
+@media (max-width: 375px) {
+  body {
+    padding: 0;
+  }
+
+  /*Cards section*/
+  #cards {
+    display: block;
+    width: inherit;
+  }
+
+  .card {
+    margin: 5%;
+    height: 135px;
+  }
+
+  /*Profile*/
+  .profileCard {
+    height: inherit;
+  }
+
+  .highlightProfile {
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #user {
+    margin-left: 20px;
+  }
+
+  #profileImage {
+    width: 50px;
+  }
+
+  #reportText {
+    margin: 0;
+  }
+
+  #userName {
+    font-size: 25px;
+    margin: 0;
+  }
+
+  .timeList {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .timeList li {
+    margin: 3%;
+  }
+
+  .show {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /*Other cards*/
+  .content {
+    position: absolute;
+    bottom: 0px;
+    width: 90%;
+    padding: 5%;
+    height: fit-content;
+  }
+
+  .content h4 {
+    margin: 3%;
+  }
+
+  .content h1 {
+    margin: 3%;
+    font-size: 25px;
+    font-weight: 200;
+  }
+
+  .content h5 {
+    margin: 3%;
+    color: rgba(255, 255, 255, 0.692);
+    font-weight: 500;
+  }
+}
