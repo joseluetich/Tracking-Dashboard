@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Tracking dashboard on GitHub](https://github.com/joseluetich/tracking-dashboard)
+- Live Site URL: [Tracking dashboard live site](https://joseluetich.github.io/tracking-dashboard/)
 
 ## Author
 
